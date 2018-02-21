@@ -26,7 +26,8 @@ public class TV {
 	public void channel( int channel ) {
 		plzOnTV();
 		if ( channel > 255 || channel < 1) {
-			System.out.println("System : 잘 못된 채널입니다.");
+//			System.out.println("System : 잘 못된 채널입니다.");
+			this.channel = 255;
 			return;
 		}
 		this.channel = channel;
@@ -43,7 +44,8 @@ public class TV {
 	public void volume(int volume) {
 		plzOnTV();
 		if(volume > 100 || volume < 0) {
-			System.out.println("System : 잘 못된 범위가 입력됐습니다.");
+//			System.out.println("System : 잘 못된 범위가 입력됐습니다.");
+			this.volume = 100;
 			return ;
 		}
 		
